@@ -1,0 +1,36 @@
+/* Contact Page */
+.page-hero h1 em { color: var(--color-accent); font-style: italic; }
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+.contact-card {
+  padding: var(--space-xl);
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: var(--border-light);
+}
+.contact-card h3 { font-size: var(--text-md); margin-bottom: var(--space-sm); }
+.contact-card p { color: var(--color-text-muted); font-size: var(--text-sm); line-height: 1.6; margin-bottom: var(--space-lg); }
+
+.contact-methods { display: flex; flex-direction: column; gap: var(--space-xs); }
+.contact-methods a {
+  font-weight: 500;
+  color: var(--color-accent);
+  transition: color var(--transition-fast);
+}
+.contact-methods a:hover { color: var(--color-accent-dark); text-decoration: underline; }
+
+.contact-form-wrapper {
+  background: var(--color-white);
+  padding: var(--space-3xl);
+  border-radius: var(--radius-lg);
+  border: var(--border-thin);
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 991px) {
+  .contact-form-wrapper { padding: var(--space-xl); }
+}

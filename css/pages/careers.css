@@ -1,0 +1,64 @@
+/* Careers Page */
+.page-hero h1 em { color: var(--color-accent); font-style: italic; }
+
+.benefit-card {
+  padding: var(--space-xl);
+  border: var(--border-thin);
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+  transition: all var(--transition-base);
+}
+.benefit-card:hover { border-color: var(--color-accent); box-shadow: var(--shadow-sm); transform: translateY(-3px); }
+.benefit-card__icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+  margin-bottom: var(--space-lg);
+}
+.benefit-card h3 { font-size: var(--text-md); margin-bottom: var(--space-sm); }
+.benefit-card p { font-size: var(--text-sm); color: var(--color-text-muted); margin-bottom: 0; }
+
+.job-group { margin-bottom: var(--space-3xl); }
+.job-group h3 {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  font-weight: 500;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--color-border);
+}
+.job-list { display: flex; flex-direction: column; gap: var(--space-md); }
+.job-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-xl);
+  background: var(--color-white);
+  border: var(--border-thin);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+}
+.job-item:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-sm);
+  transform: translateX(4px);
+}
+.job-item__info h4 { font-size: var(--text-lg); margin-bottom: var(--space-xs); }
+.job-item__meta { font-size: var(--text-sm); color: var(--color-text-muted); }
+.job-item__arrow {
+  color: var(--color-accent);
+  font-size: var(--text-xl);
+  opacity: 0.5;
+  transition: all var(--transition-base);
+}
+.job-item:hover .job-item__arrow { opacity: 1; transform: translateX(4px); }
+
+@media (max-width: 575px) {
+  .job-item { flex-direction: column; align-items: flex-start; gap: var(--space-md); }
+  .job-item__arrow { display: none; }
+}

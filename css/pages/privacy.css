@@ -1,0 +1,50 @@
+/* Legal Pages */
+.page-hero h1 em { color: var(--color-accent); font-style: italic; }
+
+.legal-content h2 {
+  font-family: var(--font-body);
+  font-size: var(--text-xl);
+  font-weight: 500;
+  margin: var(--space-2xl) 0 var(--space-md);
+  color: var(--color-text);
+  border-bottom: var(--border-thin);
+  padding-bottom: var(--space-sm);
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content h3 {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  font-weight: 500;
+  margin: var(--space-lg) 0 var(--space-sm);
+  color: var(--color-text);
+}
+
+.legal-content p {
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: var(--space-md);
+}
+
+.legal-content ul {
+  list-style: disc;
+  padding-left: var(--space-xl);
+  margin-bottom: var(--space-lg);
+  color: var(--color-text-muted);
+}
+
+.legal-content li {
+  margin-bottom: var(--space-sm);
+  line-height: 1.6;
+}
+
+.legal-content a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+.legal-content a:hover {
+  color: var(--color-accent-dark);
+}

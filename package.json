@@ -1,0 +1,14 @@
+{
+  "name": "uinspire-project",
+  "version": "1.0.0",
+  "description": "UINSPIRE — Corporate organization website for technology consulting and digital transformation",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}

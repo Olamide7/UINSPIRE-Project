@@ -1,0 +1,63 @@
+/* Testimonials Page */
+.page-hero h1 em { color: var(--color-accent); font-style: italic; }
+
+.video-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-dark-surface);
+  transition: transform var(--transition-base);
+}
+.video-card:hover {
+  transform: translateY(-4px);
+}
+.video-card:hover .play-button {
+  transform: translate(-50%, -50%) scale(1.1);
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+.video-placeholder {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(45deg, #1A1A18, #2A2A27);
+  overflow: hidden;
+  cursor: pointer;
+}
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  transition: background var(--transition-fast);
+}
+.video-placeholder:hover .video-overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--color-white);
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: all var(--transition-spring);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.video-info {
+  padding: var(--space-xl);
+}
+.video-info h3 {
+  font-size: var(--text-lg);
+  color: var(--color-dark-text);
+  margin-bottom: var(--space-xs);
+}
+.video-info p { margin-bottom: 0; font-size: var(--text-sm); }
